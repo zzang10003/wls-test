@@ -12,8 +12,8 @@ admin_name  = os.environ.get("ADMIN_NAME", "AdminServer")
 admin_listen_port   = int(os.environ.get("ADMIN_LISTEN_PORT", "7001"))
 domain_path  = '/u01/oracle/user_projects/domains/%s' % domain_name
 production_mode = os.environ.get("PRODUCTION_MODE", "prod")
-administration_port_enabled = os.environ.get("ADMINISTRATION_PORT_ENABLED", "true")
-administration_port = int(os.environ.get("ADMINISTRATION_PORT", "9002"))
+administration_port_enabled = os.environ.get("ADMINISTRATION_PORT_ENABLED", "false")
+# administration_port = int(os.environ.get("ADMINISTRATION_PORT", "9002"))
 
 print('domain_name                 : [%s]' % domain_name);
 print('admin_listen_port           : [%s]' % admin_listen_port);
@@ -21,7 +21,7 @@ print('domain_path                 : [%s]' % domain_path);
 print('production_mode             : [%s]' % production_mode);
 print('admin name                  : [%s]' % admin_name);
 print('administration_port_enabled : [%s]' % administration_port_enabled);
-print('administration_port         : [%s]' % administration_port);
+# print('administration_port         : [%s]' % administration_port);
 
 # Open default domain template
 # ============================
