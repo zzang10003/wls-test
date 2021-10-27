@@ -1,7 +1,7 @@
 #--------------------
 # WebLogic Domain
 #--------------------
-FROM container-registry.oracle.com/middleware/weblogic:14.1.1.0-11-ol8
+FROM container-registry.oracle.com/middleware/weblogic:14.1.1.0-11
 
 ENV ORACLE_HOME=/u01/oracle \
     USER_MEM_ARGS="-Djava.security.egd=file:/dev/./urandom" \
